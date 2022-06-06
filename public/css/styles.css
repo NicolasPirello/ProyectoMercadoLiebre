@@ -1,10 +1,28 @@
+/* * ------------------------------- GLOBALES ------------------------------- */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 body{
-    background-color: #ffffff;
+    background-color: #ebebeb;
     font-family: 'Roboto Flex';
 }
 
+a:link, a:visited,  a:hover, a:active
+{
+    color: #000000;
+    text-decoration: none;
+}
+
+/* * ------------------------------- HEADER ------------------------------- */
+ 
 header{
     background-color: #EAC926;
+    padding: 0;
+    margin: 0
 }
 
 .logo{
@@ -29,31 +47,9 @@ nav ul {
     font-size: 12px;
 }
 
-a:link, a:visited,  a:hover, a:active
-{
-    color: #000000;
-    text-decoration: none;
-}
-
-h2 {
-    font-size: 24px;
-}
-
-p{
-    font-size: 12px;
-}
-
-.precios{
-    font-size: 18px;
-}
-
-
-.descuentos{
-    font-size: 16px;
-}
-
-.descripcion{
-    font-size: 16px;
+.navegacion{
+    display: none;
+    margin-bottom: 0.5em;
 }
 
 .burger-menu{
@@ -68,17 +64,86 @@ p{
     background: #03264C;
     border: 12px solid #03264C;
     border-radius: 5px;
+    margin-top: 1em;
     margin-bottom: 1em;
-
 }
 
-/* FOOTER */ 
+/* * ------------------------------- MAIN ------------------------------- */
+
+.Hola{
+    width: 100%;
+    max-width: 1700px;
+    display: flex;
+    margin: auto;
+}
+
+
+main {
+    background-color: #ebebeb;
+}
+
+main section {
+    width: 90%;
+    margin: auto;
+}
+
+section div {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+}
+
+section h2 {
+    font-size: 24px;
+    padding-top: 0.7em ;
+    padding-bottom: 0.7em ;
+}
+
+
+p{
+    font-size: 12px;
+}
+
+.precios{
+    font-size: 18px;
+}
+
+
+.descuentos{
+    font-size: 16px;
+    color: #39b54a;
+}
+
+.descripcion{
+    display: none;
+    font-size: 16px;
+    margin-top: 0.5em;
+}
+
+.fa-truck{
+    margin: 0.5em;
+    color: #39b54a;
+    padding: 0.4em;
+    border: solid 2px #39b54a;
+    border-radius: 50%;
+}
+
+.detallesProductos {
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+}
+
+/* * ------------------------------- FOOTER ------------------------------- */ 
 
 footer{
-    margin:0;
+    width: 97%;
+    background-color: #ffffff;
     text-align: center;
-    align-items: center;
-    align-content: center;
+    padding-top: 5px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 15px;
+    margin: auto;
 }
 
 footer section h4 {
@@ -86,17 +151,9 @@ footer section h4 {
     margin-top: 0.5em;
 }
 
-
-/* footer section p {
-    color: #ebebeb;
-}
-
-Si le agrego este color que dice el PDF queda casi invisible
-
-*/
-
 .tarjetaCredito{
-    margin-top: 2.5em;
+    margin-top: 4em;
+    padding: 0;
 }
 
 .fa-credit-card{
@@ -105,7 +162,7 @@ Si le agrego este color que dice el PDF queda casi invisible
 }
 
 .envioGratis{
-    margin-top: 2.5em;
+    margin-top: 4em;
     padding: 0;
 }
 
@@ -115,7 +172,7 @@ Si le agrego este color que dice el PDF queda casi invisible
 }
 
 .seguridad{
-    margin-top: 2.5em;
+    margin-top: 4em;
     padding: 0;
 }
 
@@ -124,3 +181,56 @@ Si le agrego este color que dice el PDF queda casi invisible
     color: #03264C;
 }
 
+.copyright{
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+}
+
+/* footer section p {
+    color: #ebebeb;
+}
+
+Si le agrego este color que dice el PDF queda casi invisible
+
+*/
+
+/* * ------------------------------- MEDIAS QUERIES ------------------------------- */ 
+
+@media (min-width : 361px)  {
+
+    .descripcion{
+        display: inline-block;
+    }
+
+    .cajaProducto {
+        box-shadow: 2px 2px 5px -1px rgba(0,0,0,0.40);
+    }
+
+    .navegacion{
+        display: inline-block;
+    }
+
+    .burger-menu{
+        display: none;
+    }
+
+}
+
+@media (min-width : 769px)  {
+
+    .descripcion{
+        display: inline-block;
+    }
+
+    .cajaProducto{
+        box-shadow: 2px 2px 5px -1px rgba(0,0,0,0.40);
+    }
+
+    .navegacion{
+        display: inline-block;
+    }
+
+    .burger-menu{
+        display: none;
+    }
+}
