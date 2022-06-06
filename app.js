@@ -2,7 +2,7 @@ const express = require("express")
 const app = express()
 const path = require("path")
 
-// MidelWare.
+// Middleware.
 
 app.use(express.static(__dirname + "/public"))
 
@@ -18,6 +18,5 @@ app.get("/", (req, res) => {
     const html = path.resolve(__dirname, "./views/home.html")
     res.sendFile(html)
 })
-
 
 

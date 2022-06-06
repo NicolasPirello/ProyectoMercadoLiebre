@@ -1,0 +1,126 @@
+body{
+    background-color: #ffffff;
+    font-family: 'Roboto Flex';
+}
+
+header{
+    background-color: #EAC926;
+}
+
+.logo{
+    width: 50%;
+    margin: 1em;
+}
+
+.busqueda{
+    margin-left: 1em;
+    font-size: 12px;
+}
+
+.cuotasSinTarjetaFrase{
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+}  
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 12px;
+}
+
+a:link, a:visited,  a:hover, a:active
+{
+    color: #000000;
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+p{
+    font-size: 12px;
+}
+
+.precios{
+    font-size: 18px;
+}
+
+
+.descuentos{
+    font-size: 16px;
+}
+
+.descripcion{
+    font-size: 16px;
+}
+
+.burger-menu{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.fa-bars{
+    color: #ffffff;
+    font-size: 1.5em;
+    background: #03264C;
+    border: 12px solid #03264C;
+    border-radius: 5px;
+    margin-bottom: 1em;
+
+}
+
+/* FOOTER */ 
+
+footer{
+    margin:0;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+
+footer section h4 {
+    color: #666;
+    margin-top: 0.5em;
+}
+
+
+/* footer section p {
+    color: #ebebeb;
+}
+
+Si le agrego este color que dice el PDF queda casi invisible
+
+*/
+
+.tarjetaCredito{
+    margin-top: 2.5em;
+}
+
+.fa-credit-card{
+    font-size: 2em;
+    color: #03264C;
+}
+
+.envioGratis{
+    margin-top: 2.5em;
+    padding: 0;
+}
+
+.fa-gift{
+    font-size: 2em;
+    color: #03264C;
+}
+
+.seguridad{
+    margin-top: 2.5em;
+    padding: 0;
+}
+
+.fa-user-shield{
+    font-size: 2em;
+    color: #03264C;
+}
+
