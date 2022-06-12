@@ -25,31 +25,57 @@ header{
     margin: 0
 }
 
-.logo{
+.logoML{
     width: 50%;
-    margin: 1em;
+    padding: 1em;
 }
 
-.busqueda{
-    margin-left: 1em;
-    font-size: 12px;
-}
-
-.cuotasSinTarjetaFrase{
-    margin-top: 1em;
+.headTabletAndDesktop{
     display: flex;
-    justify-content: center;
-}  
+}
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    font-size: 12px;
+.searchAndLogo{
+    display: flex;
+    padding: 0 10px 0 10px;
+    width: 100%;
+}
+
+.inputWithIcon {
+    position: relative;
+    margin :auto;
+    width: 100%;
+}
+
+.inputWithIcon input {
+    height: 30px;
+    border-radius: 5px;
+    border-style: none;
+    width: 100%;
+}
+
+.inputWithIcon i {
+    position: absolute;
+    padding-right: 2px;
+    padding-left: 2px;
+    right: 8px;
+    top: 8px;
+    background-color: white;
+}
+
+.fa-hand-holding-usd{
+    padding-right: 5px;
 }
 
 .navegacion{
     display: none;
     margin-bottom: 0.5em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 12px;
+    display: flex;
 }
 
 .burger-menu{
@@ -66,6 +92,13 @@ nav ul {
     border-radius: 5px;
     margin-top: 1em;
     margin-bottom: 1em;
+}
+
+.cuotasSinTarjetaFrase{
+    font-size: 12px;
+    text-align: center;
+    padding-top: 5px;
+    display: block;
 }
 
 /* * ------------------------------- MAIN ------------------------------- */
@@ -90,7 +123,6 @@ main section {
 section div {
     margin-top: 10px;
     margin-bottom: 10px;
-    background-color: #ffffff;
 }
 
 section h2 {
@@ -106,12 +138,14 @@ p{
 
 .precios{
     font-size: 18px;
+    width: 30%;
 }
 
 
 .descuentos{
     font-size: 16px;
     color: #39b54a;
+    text-align: left;
 }
 
 .descripcion{
@@ -126,14 +160,31 @@ p{
     padding: 0.4em;
     border: solid 2px #39b54a;
     border-radius: 50%;
+    position: absolute;
+    right: 20px ;
+    top: -25px;
+    background: white; 
 }
 
 .detallesProductos {
     border-top: solid 1px #ebebeb;
     padding: 15px;
+    position: relative;
 }
 
+.priceAndDiscount {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cajaProducto{
+    background-color: white;
+}
+
+
 /* * ------------------------------- FOOTER ------------------------------- */ 
+
+
 
 footer{
     width: 97%;
@@ -194,10 +245,50 @@ Si le agrego este color que dice el PDF queda casi invisible
 
 */
 
+
 /* * ------------------------------- MEDIAS QUERIES ------------------------------- */ 
 
 @media (min-width : 361px)  {
 
+    .descripcion{
+        display: inline-block;
+    }
+    
+    .cajaProducto{
+        box-shadow: 2px 2px 5px -1px rgba(0,0,0,0.40);
+    }
+    
+    .navegacion{
+        display: inline-block;
+        /* Nuevo */
+        display: flex;
+        justify-content: space-between;
+        padding: 0.5em;
+    }
+
+    .navegacion ul li{
+        padding: 0.2em;
+    }
+
+    .navegacion ul li a{
+        font-size: 8px;
+    }
+    
+    .burger-menu{
+        display: none;
+    }
+
+    .boxProductsVisit{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+}
+
+@media (min-width : 769px)  {
+
+ 
     .descripcion{
         display: inline-block;
     }
@@ -207,30 +298,30 @@ Si le agrego este color que dice el PDF queda casi invisible
     }
 
     .navegacion{
-        display: inline-block;
+        display: flex;
+        justify-content: space-between;
+        padding: 1em;
+    }
+
+    .navegacion ul li{
+        padding: 0.4em;
+    }
+
+    .navegacion ul li a{
+        font-size: 14px;
     }
 
     .burger-menu{
         display: none;
     }
 
+    .boxProductsVisit{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+    }
+
 }
 
-@media (min-width : 769px)  {
 
-    .descripcion{
-        display: inline-block;
-    }
 
-    .cajaProducto{
-        box-shadow: 2px 2px 5px -1px rgba(0,0,0,0.40);
-    }
-
-    .navegacion{
-        display: inline-block;
-    }
-
-    .burger-menu{
-        display: none;
-    }
-}
