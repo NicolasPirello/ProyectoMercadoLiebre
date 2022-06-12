@@ -25,25 +25,23 @@ header{
     margin: 0
 }
 
+.searchAndLogo{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 10px 0 10px;
+    width: 100%;
+    justify-content: space-between;
+}
+
 .logoML{
     width: 50%;
     padding: 1em;
 }
 
-.headTabletAndDesktop{
-    display: flex;
-}
-
-.searchAndLogo{
-    display: flex;
-    padding: 0 10px 0 10px;
-    width: 100%;
-}
-
 .inputWithIcon {
     position: relative;
     margin :auto;
-    width: 100%;
+    width: 50%;
 }
 
 .inputWithIcon input {
@@ -60,6 +58,19 @@ header{
     right: 8px;
     top: 8px;
     background-color: white;
+}
+
+.inputWithIcon ::placeholder {
+    max-width: 75%;
+    font-size: xx-small;
+    padding-left: 3%;
+}
+
+.cuotasSinTarjetaFrase{
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 5px;
 }
 
 .fa-hand-holding-usd{
@@ -94,12 +105,7 @@ nav ul {
     margin-bottom: 1em;
 }
 
-.cuotasSinTarjetaFrase{
-    font-size: 12px;
-    text-align: center;
-    padding-top: 5px;
-    display: block;
-}
+
 
 /* * ------------------------------- MAIN ------------------------------- */
 
@@ -181,20 +187,18 @@ p{
     background-color: white;
 }
 
+.ProductImg{
+    padding: 5%;
+}
 
 /* * ------------------------------- FOOTER ------------------------------- */ 
 
-
-
-footer{
+.footer{
     width: 97%;
-    background-color: #ffffff;
     text-align: center;
-    padding-top: 5px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 15px;
-    margin: auto;
+    background-color: #ffffff;
+    margin-top: 15px;
+    padding: 5px 50px 5px 50px;
 }
 
 footer section h4 {
@@ -284,7 +288,39 @@ Si le agrego este color que dice el PDF queda casi invisible
         gap: 10px;
     }
 
+    .logoML{
+        width: 30%;
+    }
+
+    .inputWithIcon{
+        width: 30%;
+    }
+
+    .inputWithIcon i {
+        right: 8px;
+        top: 8px;
+    }
+
+    .inputWithIcon ::placeholder {
+        max-width: 75%;
+        font-size: xx-small;
+        padding-left: 3%;
+    }
+
+    .cuotasSinTarjetaFrase{
+        width: 30%;
+        font-size: 10px;
+        text-align: center;
+        margin: auto;
+    }
+
+    section div {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
 }
+
+
 
 @media (min-width : 769px)  {
 
@@ -318,7 +354,28 @@ Si le agrego este color que dice el PDF queda casi invisible
     .boxProductsVisit{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        gap: 15px;
+        gap: 10px;
+    }
+
+    Nuevo
+
+    .logoML{
+        width: 30%;
+    }
+
+    .inputWithIcon{
+        width: 30%;
+    }
+
+    .inputWithIcon ::placeholder {
+        max-width: 75%;
+        font-size: small;
+        padding-left: 3%;
+    }
+
+    .cuotasSinTarjetaFrase{
+        width: 30%;
+        font-size: 16px;
     }
 
 }

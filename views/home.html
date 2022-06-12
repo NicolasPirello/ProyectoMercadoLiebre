@@ -25,24 +25,23 @@
 
     <header>
 
-        <div class="headTabletAndDesktop">
-
-            <div class="searchAndLogo">
+        <div class="searchAndLogo">
 
             <img class="logoML" src="/images/logo-mercado-liebre.svg" alt="Logo de MercadoLibre">
 
-                <div class="inputWithIcon">
-                    <input type="text" id="name" placeholder="  Buscar productos, marcas">
-                    <i class="fas fa-search"></i>
-                </div>
-
+            <div class="inputWithIcon">
+                <input type="text" id="name" placeholder="Buscar productos, marcas y mas...">
+                <i class="fas fa-search"></i>
             </div>
-            
-        </div>
 
-        <div class="cuotasSinTarjetaFrase">
-            <i class="fas fa-hand-holding-usd"></i> Compra en cuotas y sin tarjeta de credito
+            <div class="cuotasSinTarjetaFrase">
+                <i class="fas fa-hand-holding-usd"></i> Compra en cuotas y sin tarjeta de credito
+            </div>
+
         </div>
+            
+
+
 
         <nav class="navegacion">
             <ul>
@@ -75,7 +74,7 @@
             <div class="boxProductsVisit">
 
                 <div class="cajaProducto">
-                    <img src="/images/img-cafetera-moulinex.jpg" width="100%" alt="Cafetera Moulinex">
+                    <img class="ProductImg" src="/images/img-cafetera-moulinex.jpg" width="100%" alt="Cafetera Moulinex">
 
                     <div class="detallesProductos">
                         <i class="fas fa-truck"></i>
@@ -89,7 +88,7 @@
                 </div>
 
                 <div class="cajaProducto">
-                    <img src="/images/img-macbook-pro-2019.jpg" width="100%" alt="MacBook Pro 2019">
+                    <img class="ProductImg" src="/images/img-macbook-pro-2019.jpg" width="100%" alt="MacBook Pro 2019">
 
                     <div class="detallesProductos">
                         <i class="fas fa-truck"></i>
@@ -103,7 +102,7 @@
                 </div>
 
                 <div class="cajaProducto">
-                    <img src="/images/img-samsung-galaxy-s10.jpg" width="100%" alt="Samsung Galaxy S10">
+                    <img class="ProductImg" src="/images/img-samsung-galaxy-s10.jpg" width="100%" alt="Samsung Galaxy S10">
 
                     <div class="detallesProductos">
                         <i class="fas fa-truck"></i>
@@ -118,7 +117,7 @@
 
                 <div class="cajaProducto">
 
-                    <img src="/images/img-tv-samsung-smart.jpg" width="100%" alt="SmartTv Samsung 43">
+                    <img class="ProductImg" src="/images/img-tv-samsung-smart.jpg" width="100%" alt="SmartTv Samsung 43">
 
                     <div class="detallesProductos">
                         <i class="fas fa-truck"></i>
@@ -142,7 +141,7 @@
             <div class="boxProductsVisit">
 
                 <div class="cajaProducto">
-                    <img src="/images/img-cafetera-moulinex.jpg" width="100%" alt="Cafetera Moulinex">
+                    <img class="ProductImg" src="/images/img-cafetera-moulinex.jpg" width="100%" alt="Cafetera Moulinex">
 
                     <div class="detallesProductos">
                         <i class="fas fa-truck"></i>
@@ -156,7 +155,7 @@
                 </div>
 
                 <div class="cajaProducto">
-                    <img src="/images/img-macbook-pro-2019.jpg" width="100%" alt="MacBook Pro 2019">
+                    <img class="ProductImg" src="/images/img-macbook-pro-2019.jpg" width="100%" alt="MacBook Pro 2019">
 
                     <div class="detallesProductos">
                         <i class="fas fa-truck"></i>
@@ -170,7 +169,7 @@
                 </div>
 
                 <div class="cajaProducto">
-                    <img src="/images/img-samsung-galaxy-s10.jpg" width="100%" alt="Samsung Galaxy S10">
+                    <img class="ProductImg" src="/images/img-samsung-galaxy-s10.jpg" width="100%" alt="Samsung Galaxy S10">
 
                     <div class="detallesProductos">
                         <i class="fas fa-truck"></i>
@@ -184,7 +183,7 @@
                 </div>
 
                 <div class="cajaProducto">
-                    <img src="/images/img-tv-samsung-smart.jpg" width="100%" alt="SmartTv Samsung 43">
+                    <img class="ProductImg" src="/images/img-tv-samsung-smart.jpg" width="100%" alt="SmartTv Samsung 43">
 
                     <div class="detallesProductos">
                         <i class="fas fa-truck"></i>
@@ -205,33 +204,38 @@
 
     <footer>
 
-        <section>
-        <div class="tarjetaCredito">
-            <i class="fas fa-credit-card"></i>
+        <div class="footer">
+
+            <section>
+                <div class="tarjetaCredito">
+                    <i class="fas fa-credit-card"></i>
+                </div>
+        
+                <h4>Pagá con tarjeta o en efectivo</h4>
+                <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
+            </section>
+
+            <section>
+                <div class="envioGratis">
+                    <i class="fas fa-gift"></i>
+                </div>  
+                <h4>Envío gratis desde $ 2.500</h4>
+                <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
+            </section>
+
+            <section>
+                <div class="seguridad">
+                    <i class="fas fa-user-shield"></i>
+                </div>
+                <h4>Seguridad, de principio a fin</h4>
+                <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.</p>
+            </section>
+
+            <section class="copyright">
+                <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+            </section>
+        
         </div>
-        <h4>Pagá con tarjeta o en efectivo</h4>
-        <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
-        </section>
-
-        <section>
-        <div class="envioGratis">
-            <i class="fas fa-gift"></i>
-        </div>  
-        <h4>Envío gratis desde $ 2.500</h4>
-        <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
-        </section>
-
-        <section>
-        <div class="seguridad">
-            <i class="fas fa-user-shield"></i>
-        </div>
-        <h4>Seguridad, de principio a fin</h4>
-        <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.</p>
-        </section>
-
-        <section class="copyright">
-        <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
-        </section>
 
     </footer>
 
