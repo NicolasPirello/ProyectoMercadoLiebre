@@ -14,9 +14,18 @@ app.listen(3000, () => {
 
 // Raices.
 
-app.get("/", (req, res) => {
-    const html = path.resolve(__dirname, "./views/home.html")
+app.get('/', (req, res) => {
+    let html = path.resolve(__dirname, "./views/home.html")
     res.sendFile(html)
 })
 
+app.get('/login.html', (req, res) => {
+    let html = path.resolve(__dirname, "./views/login.html")
+    res.sendFile(html)
+})
+
+app.get('/signin.html', (req, res) => {
+    let html = path.resolve(__dirname, "./views/signin.html")
+    res.sendFile(html)
+})
 

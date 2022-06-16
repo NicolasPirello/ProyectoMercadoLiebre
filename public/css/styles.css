@@ -1,3 +1,7 @@
+/** ============= Bloque cabecera ================ **/
+
+/** ------------ Bloque menu cabecera ------------ **/
+
 /* * ------------------------------- GLOBALES ------------------------------- */
 
 * {
@@ -11,14 +15,16 @@ body{
     font-family: 'Roboto Flex';
 }
 
-a:link, a:visited,  a:hover, a:active
+a:link, a:visited, a:hover, a:active
 {
     color: #000000;
     text-decoration: none;
 }
 
-/* * ------------------------------- HEADER ------------------------------- */
- 
+/*? ============= Header ================ ?*/
+
+/** ------------ Comparten CSS ------------ **/
+
 header{
     background-color: #EAC926;
     padding: 0;
@@ -57,7 +63,6 @@ header{
     padding-left: 2px;
     right: 8px;
     top: 8px;
-    background-color: white;
 }
 
 .inputWithIcon ::placeholder {
@@ -71,7 +76,7 @@ header{
     font-size: 12px;
     text-align: center;
     padding-top: 5px;
-}
+} 
 
 .fa-hand-holding-usd{
     padding-right: 5px;
@@ -79,7 +84,7 @@ header{
 
 .navegacion{
     display: none;
-    margin-bottom: 0.5em;
+    margin-bottom: 20px;
 }
 
 nav ul {
@@ -93,9 +98,10 @@ nav ul {
     display: flex;
     justify-content: center;
     padding: 0;
+    margin-bottom: 20px;
 }
 
-.fa-bars{
+.burger-menu .fa-bars{
     color: #ffffff;
     font-size: 1.5em;
     background: #03264C;
@@ -106,30 +112,24 @@ nav ul {
 }
 
 
+/*? ============= Main ================ ?*/
 
-/* * ------------------------------- MAIN ------------------------------- */
-
-.Hola{
-    width: 100%;
-    max-width: 1700px;
-    display: flex;
-    margin: auto;
-}
-
-
-main {
-    background-color: #ebebeb;
-}
+/** ------------ Comparten CSS ------------ **/
 
 main section {
     width: 90%;
     margin: auto;
 }
 
-section div {
-    margin-top: 10px;
-    margin-bottom: 10px;
+main {
+    background-color: #ebebeb;
 }
+
+.BannerML{
+    width: 100%;
+}
+
+/** ------------ Home.html ------------ **/
 
 section h2 {
     font-size: 24px;
@@ -137,9 +137,19 @@ section h2 {
     padding-bottom: 0.7em ;
 }
 
-
 p{
     font-size: 12px;
+}
+
+.cajaProducto {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+section .cajaProducto:hover {
+    transition: 300ms;
+    box-shadow: 2px 2px 5px -1px rgba(0,0,0,0.40);
 }
 
 .precios{
@@ -147,18 +157,22 @@ p{
     width: 30%;
 }
 
-
 .descuentos{
     font-size: 16px;
     color: #39b54a;
-    text-align: left;
 }
 
 .descripcion{
-    display: none;
+    visibility: hidden;
     font-size: 16px;
     margin-top: 0.5em;
 }
+
+section .cajaProducto:hover .descripcion{
+    visibility:visible;
+    transition: 2s;
+}
+
 
 .fa-truck{
     margin: 0.5em;
@@ -172,29 +186,147 @@ p{
     background: white; 
 }
 
+
 .detallesProductos {
     border-top: solid 1px #ebebeb;
     padding: 15px;
     position: relative;
 }
 
+.detallesProductos i:hover{
+    transform: rotateZ(-90deg);
+    transition: 1s;
+}
+
 .priceAndDiscount {
     display: flex;
     justify-content: space-between;
-}
-
-.cajaProducto{
-    background-color: white;
+    margin-top: 10px;
 }
 
 .ProductImg{
     padding: 5%;
+    width: 100%
 }
 
-/* * ------------------------------- FOOTER ------------------------------- */ 
+
+
+/** ------------ Login.html ------------ **/
+
+.containerForm{
+    width: 60%;
+    margin: auto; 
+    max-width: 420px;
+}
+
+.containerForm input{
+    width: 100%;
+    padding: 6px;
+    border: none;
+    border-radius: 5px;
+}
+
+.form__boxLabel{
+    padding-bottom: 25px;
+}
+
+.form__boxLabel ::placeholder{
+    padding-left: 5px;
+}
+
+.form__button{
+    width: 100%;
+    padding: 10px;
+    background: #03264C;
+    border-radius: 5px;
+    border: none;
+    color: #ffffff;
+}
+
+.form__button:hover{
+    background: #0022AA;
+}
+
+/** ------------ SingIn.html ------------ **/
+
+.form__formContainerSI{
+    padding: 30px;
+    max-width: 500px;
+    margin: auto;
+    font-size: small;
+}
+
+.form__formBoxSI{
+    padding: 10px;
+}
+
+.form__textSI{
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.form__subtitleSI{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.form__subtitleUserPerfil{
+    display: inline-block;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.form__subtitleUserPerfil label{
+    padding-left: 10px;
+}
+
+.form__inputDateBirth{
+    padding: 6px;
+    border: none;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.form__containerSubtitles{
+    margin-bottom: 20px;
+}
+
+.form__Interests{
+    display: block;
+    padding: 10px;
+}
+
+.form__Interests label{
+    padding-left: 10px;
+}
+
+.form__perfilFile{
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+
+.form__buttonsSI button{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px 0;
+    background: #03264C;
+    border-radius: 5px;
+    border: none;
+    color: #ffffff;
+}
+
+
+/*? ============= Footer ================ ?*/
+
+/** ------------ Comparten CSS ------------ **/
 
 .footer{
-    width: 97%;
+    width: 100%;
     text-align: center;
     background-color: #ffffff;
     margin-top: 15px;
@@ -204,9 +336,10 @@ p{
 footer section h4 {
     color: #666;
     margin-top: 0.5em;
+    margin-bottom: 0.5em;
 }
 
-.tarjetaCredito{
+.footerIconFontAwesome{
     margin-top: 4em;
     padding: 0;
 }
@@ -216,20 +349,11 @@ footer section h4 {
     color: #03264C;
 }
 
-.envioGratis{
-    margin-top: 4em;
-    padding: 0;
-}
-
 .fa-gift{
     font-size: 2em;
     color: #03264C;
 }
 
-.seguridad{
-    margin-top: 4em;
-    padding: 0;
-}
 
 .fa-user-shield{
     font-size: 2em;
@@ -241,30 +365,15 @@ footer section h4 {
     margin-bottom: 1.5em;
 }
 
-/* footer section p {
-    color: #ebebeb;
-}
-
-Si le agrego este color que dice el PDF queda casi invisible
-
-*/
 
 
-/* * ------------------------------- MEDIAS QUERIES ------------------------------- */ 
+/* * ------------------------------- MEDIAS QUERIES DE 361 PX ------------------------------- */ 
 
 @media (min-width : 361px)  {
 
-    .descripcion{
-        display: inline-block;
-    }
-    
-    .cajaProducto{
-        box-shadow: 2px 2px 5px -1px rgba(0,0,0,0.40);
-    }
-    
+    /*? ============= Header ================ ?*/
+
     .navegacion{
-        display: inline-block;
-        /* Nuevo */
         display: flex;
         justify-content: space-between;
         padding: 0.5em;
@@ -277,15 +386,9 @@ Si le agrego este color que dice el PDF queda casi invisible
     .navegacion ul li a{
         font-size: 8px;
     }
-    
+
     .burger-menu{
         display: none;
-    }
-
-    .boxProductsVisit{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
     }
 
     .logoML{
@@ -301,12 +404,6 @@ Si le agrego este color que dice el PDF queda casi invisible
         top: 8px;
     }
 
-    .inputWithIcon ::placeholder {
-        max-width: 75%;
-        font-size: xx-small;
-        padding-left: 3%;
-    }
-
     .cuotasSinTarjetaFrase{
         width: 30%;
         font-size: 10px;
@@ -314,24 +411,34 @@ Si le agrego este color que dice el PDF queda casi invisible
         margin: auto;
     }
 
-    section div {
+    /*? ============= Main ================ ?*/
+
+    .descripcion{
+        visibility:visible;
+    }
+
+    .boxProductsVisit{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    section .cajaProducto {
         margin-top: 0px;
         margin-bottom: 0px;
+
     }
+
+
+    /*? ============= Footer ================ ?*/ 
+
 }
 
-
+/* * ------------------------------- MEDIAS QUERIES DE 769 PX ------------------------------- */ 
 
 @media (min-width : 769px)  {
 
- 
-    .descripcion{
-        display: inline-block;
-    }
-
-    .cajaProducto {
-        box-shadow: 2px 2px 5px -1px rgba(0,0,0,0.40);
-    }
+    /*? ============= Header ================ ?*/ 
 
     .navegacion{
         display: flex;
@@ -350,14 +457,6 @@ Si le agrego este color que dice el PDF queda casi invisible
     .burger-menu{
         display: none;
     }
-
-    .boxProductsVisit{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 10px;
-    }
-
-    Nuevo
 
     .logoML{
         width: 30%;
@@ -378,6 +477,40 @@ Si le agrego este color que dice el PDF queda casi invisible
         font-size: 16px;
     }
 
+    /*? ============= Main ================ ?*/
+
+    .descripcion{
+        visibility:visible;
+    }
+
+
+    .boxProductsVisit{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
+
+
+    /*? ============= Footer ================ ?*/ 
+
+    .footer__sectionsContainer{
+        display: flex;
+    }
+
+    .footer__section{
+        padding: 20px 50px;
+    }
+
+    .footerIconFontAwesome{
+        margin-top: 0;
+    }
+
+    .footerIconFontAwesome i:hover{
+        color: #0022AA
+    }
+
+
+    
 }
 
 
